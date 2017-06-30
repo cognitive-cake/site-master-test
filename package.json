@@ -2,10 +2,10 @@
   "name": "site-master-test",
   "version": "1.0.0",
   "description": "Test work for \"Site-Master\"",
-  "main": "index.js",
+  "main": "",
   "dependencies": {},
   "devDependencies": {
-    "jquery": "^3.2.1"
+    "grunt-cli": "^1.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

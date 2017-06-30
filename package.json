@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Test work for \"Site-Master\"",
   "main": "",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
   "devDependencies": {
     "grunt-cli": "^1.2.0"
   },

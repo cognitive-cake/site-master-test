@@ -2,9 +2,15 @@ body {
   max-width: 1530px;
 }
 
+main {
+background-color: #f4f3f4;  
+}
+
 .navbar-wrapper {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 20;
 }
 
@@ -40,4 +46,20 @@ body {
   border-radius: 12px;
   
   background-color: #fff;
+}
+
+.gallery-wrapper {  
+  width: 100%;
+  height: 570px;
+  
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+.preview-l {
+
+}
+
+.btn-goods {
+  width: 100%;
 }

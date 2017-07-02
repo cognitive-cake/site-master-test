@@ -35,54 +35,90 @@ body {
 main {
 background-color: #f4f3f4;  
 }
-
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
+@media (min-width: 992px) {
+  .navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+  }
+  
+  .nav .link-white {
+    font-size: 18px;
+    line-height: 19px;
+  }
+  
+  .link-white {
+    color: #fff; 
+  }
+  
+  .custom-navbar {
+    margin-top: 23px;
+  }
+  
+  .custom-navbar > .navbar-right {
+    margin-right: 0;
+  }
+  
+  .custom-navbar > .nav > li > a {
+    margin-left: 37px;
+    margin-right: 38px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .custom-navbar > .nav > li > a:hover,
+  .custom-navbar > .nav > li > a:focus {
+    color: white;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+  }
+  
+  .custom-navbar > .nav > li:first-child > a {
+    margin-left: 0;
+  }
+  
+  .custom-navbar > .nav > li:nth-last-child(2) > a {
+    margin-right: 0;
+  }
+  
+  .custom-navbar > .nav > li > .cart-link {
+    position: absolute;
+    top: 45px;
+    right: -1px;
+    width: 144px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+  
+  .navbar-brand {
+    position: relative;
+    height: auto;
+    min-height: 50px;
+    margin-top: 7px;
+    margin-left: -17px !important;
+    padding: 0;
+  }
+  
+  .navbar-brand > .brand {
+    position: absolute;
+    top: 30px;
+    left: 102px;
+    color: #d62c01;
+    font-family: Verdana;
+    font-size: 24px;
+    line-height: 16px;
+  }
+  
+  .navbar > .container {
+    padding: 0;
+  }
 }
 
-.nav .link-white {
-  font-size: 18px;
-  line-height: 19px;
-}
-
-.link-white {
-  color: #fff; 
-}
-
-.custom-navbar {
-  margin-top: 22px;
-}
-
-.custom-navbar > .nav > li > a {
-  margin-left: 37px;
-  margin-right: 38px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.custom-navbar > .nav > li:first-child > a {
-  margin-left: 0;
-}
-
-.custom-navbar > .nav > li:nth-last-child(2) > a {
-  margin-right: 0;
-}
-
-.custom-navbar > .nav > li > .cart-link {
-  position: absolute;
-  top: 45px;
-  right: -1px;
-  width: 144px;
-  margin-left: 0;
-  margin-right: 0;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 25px;
-}
 
 .link-red {
   color: #d62c01;

@@ -29,6 +29,7 @@
 body {
   font-family: 'Open Sans', 'Verdana', serif;
   max-width: 1530px;
+  font-size: 16px;
 }
 
 main {
@@ -43,8 +44,44 @@ background-color: #f4f3f4;
   z-index: 20;
 }
 
+.nav .link-white {
+  font-size: 18px;
+  line-height: 19px;
+}
+
 .link-white {
   color: #fff; 
+}
+
+.custom-navbar {
+  margin-top: 22px;
+}
+
+.custom-navbar > .nav > li > a {
+  margin-left: 37px;
+  margin-right: 38px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-navbar > .nav > li:first-child > a {
+  margin-left: 0;
+}
+
+.custom-navbar > .nav > li:nth-last-child(2) > a {
+  margin-right: 0;
+}
+
+.custom-navbar > .nav > li > .cart-link {
+  position: absolute;
+  top: 45px;
+  right: -1px;
+  width: 144px;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
 }
 
 .link-red {

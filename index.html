@@ -82,26 +82,35 @@
           <table class="gallery-wrapper">
             <tr>
               <td>
-                <a class="preview-l" href="#">
+                <a class="preview-item preview-m" href="#">
+                  <img class="center-block" src="img/axe-m.jpg" alt="Axe M">
+                </a>
+                <a class="preview-item preview-l" href="#">
                   <img class="center-block" src="img/axe-l.jpg" alt="Axe L">
+                </a>
+                <a class="preview-item preview-xl" href="#">
+                  <img class="center-block" src="img/axe-xl.jpg" alt="Axe XL">
+                </a>
+                <a class="preview-item preview-xxl" href="#">
+                  <img class="center-block" src="img/axe-xxl.jpg" alt="Axe XXL">
                 </a>
               </td>
             </tr>            
           </table>                  
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 gallery-description">
           <h2 class="text-uppercase">Топор обыкновенный</h2>
           <p>Коллекция: лето/зима</p>
           <p>Материал: корозионностойкая дамасская сталь</p>
           <p>----</p>
           <p>Обыкновенный топор, обладающий, как хозяйственными качествами, так и оружейными. Может активно применяться в различных жизненных ситуациях.</p>
-          <p>Упакован в деревянный футляр, обитый внутри бархатом.</p>
+          <p class="big-margins">Упакован в деревянный футляр, обитый внутри бархатом.</p>
           <div class="row">
-            <div class="col-sm-2"><p><button class="btn btn-default btn-goods" type="button">M</button></p></div>
-            <div class="col-sm-2"><p><button class="btn btn-default btn-goods" type="button">L</button></p></div>
-            <div class="col-sm-2"><p><button class="btn btn-default btn-goods" type="button">XL</button></p></div>
-            <div class="col-sm-2"><p><button class="btn btn-default btn-goods" type="button">XXL</button></p></div>
-            <div class="col-sm-4"><p><a href="#" class="btn btn-default btn-goods" role="button">Купить</a></p></div>
+            <div class="col-sm-2"><p><button class="btn btn-goods btn-size" data-size="M" type="button">M</button></p></div>
+            <div class="col-sm-2"><p><button class="btn btn-goods btn-size active" data-size="L" type="button">L</button></p></div>
+            <div class="col-sm-2"><p><button class="btn btn-goods btn-size" data-size="XL" type="button">XL</button></p></div>
+            <div class="col-sm-2"><p><button class="btn btn-goods btn-size" data-size="XXL" type="button">XXL</button></p></div>
+            <div class="col-sm-4"><p><a href="#" class="btn btn-goods" role="button">Купить</a></p></div>
           </div>
         </div>
       </div>
@@ -130,5 +139,6 @@
   </footer>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/gallery.js"></script>
 </body>
 </html>

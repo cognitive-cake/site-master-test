@@ -157,6 +157,50 @@ main .container {
   padding: 0;
 }
 
+.gallery-description h2 {
+  margin-top: 23px;
+  margin-bottom: 19px;
+  color: #dc0000;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.gallery-description p {
+  margin-bottom: 12px;
+  
+  color: #777777;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.09em;
+}
+
+.gallery-description .big-margins {
+  margin-top: 24px;
+  margin-bottom: 49px;
+}
+
+.btn-goods {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid #333333;
+  border-radius: 0;
+  letter-spacing: -0.07em;
+}
+
+.btn-goods:focus,
+.btn-goods:active,
+.btn-goods.active {
+  color: #fff;
+  background-color: #333;
+}
+
 .main-title {
   margin-top: 23px;
   margin-bottom: 24px;

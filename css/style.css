@@ -149,6 +149,33 @@ background-color: #f4f3f4;
   }
 }
 
+main {
+  padding-top: 58px;
+}
+
+main .container {
+  padding: 0;
+}
+
+.main-title {
+  margin-top: 23px;
+  margin-bottom: 24px;
+  color: #333333;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.red-line {
+  display: block;
+  height: 3px;
+  width: 112px;
+  background-color: #dc0000;
+}
+
+.red-line:last-child {
+  margin-bottom: 60px;
+}
+
 .btn-slider {
   padding-top: 16px;
   padding-bottom: 18px;

@@ -35,6 +35,8 @@ body {
 main {
 background-color: #f4f3f4;  
 }
+
+
 @media (min-width: 992px) {
   .navbar-wrapper {
     position: absolute;
@@ -117,8 +119,54 @@ background-color: #f4f3f4;
   .navbar > .container {
     padding: 0;
   }
+  
+  .carousel-caption {
+    bottom: 99px;
+  }
+  
+
 }
 
+@media (min-width: 1200px) {
+  .first-slide h2 {
+    margin-bottom: 66px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.3em;
+    padding-left: 68px;
+  }
+  
+  .first-slide h1 {
+    margin-bottom: 140px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+  
+  .first-slide p {
+    margin-bottom: 3px;
+  }
+}
+
+.btn-slider {
+  padding-top: 16px;
+  padding-bottom: 18px;
+  width: 200px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 0;
+}
+
+.btn-slider.link-white {
+  color: #fff;
+}
+
+.btn-slider:hover,
+.btn-slider:focus {
+  background-color: white;
+  color: #000;
+}
 
 .link-red {
   color: #d62c01;
@@ -127,7 +175,7 @@ background-color: #f4f3f4;
 .carousel-indicators .active {
   width: 16px;
   height: 16px;
-  margin: 0;
+  margin: 1px;
 
   border: 2px solid #fff;
   
@@ -140,7 +188,7 @@ background-color: #f4f3f4;
 
   width: 12px;
   height: 12px;
-  margin: 2px;
+  margin: 3px;
 
   cursor: pointer;
   text-indent: -999px;

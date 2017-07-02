@@ -28,7 +28,6 @@ window.gallery = (function () {
   };
   
   galleryDesc.addEventListener('click', function (evt) {
-    debugger
     var currentBtn = evt.target;
     if (isActive(evt)) {
       return;

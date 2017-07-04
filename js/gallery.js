@@ -7,11 +7,10 @@ window.gallery = (function () {
   var previews = gallery.querySelectorAll('.preview-item');
   
   for (var i = 0; i < sizeBtns.length; i++) {
-    if (sizeBtns[i].classList.contains('active')) {
-      previews[i].classList.add('show');
-    } else {
-      previews[i].classList.add('hide')
-    }
+    if (!sizeBtns[i].classList.contains('active')) {
+      previews[i].classList.add('hide');
+    } 
+      
   }
   
   function isActive(evt) {
@@ -36,7 +35,6 @@ window.gallery = (function () {
         sizeBtns[i].classList.remove('active');
       }
       for (var i = 0; i < previews.length; i++) {
-        previews[i].classList.remove('show');
         previews[i].classList.add('hide');
       }
     }

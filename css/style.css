@@ -157,6 +157,10 @@ main .container {
   padding: 0;
 }
 
+.item-section {
+  margin-bottom: 55px;
+}
+
 .gallery-description h2 {
   margin-top: 23px;
   margin-bottom: 19px;
@@ -277,10 +281,17 @@ main .container {
   background-color: #fff;
 }
 
-.preview-l {
-
-}
-
 .btn-goods {
   width: 100%;
+}
+
+.user-response__text-wrapper {
+  min-height: 152px;
+  padding: 23px;
+  
+  color: #666666;
+  line-height: 24px;
+  
+  border: 1px solid #d1d1d1;
+  background-color: #fff;
 }

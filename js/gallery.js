@@ -10,13 +10,7 @@ window.gallery = (function () {
     if (!sizeBtns[i].classList.contains('active')) {
       previews[i].classList.add('hide');
     } 
-      
   }
-  
-  function isActive(evt) {
-    var currentBtn = evt.target;
-    return currentBtn.classList.contains('active');
-  };
   
   function choosePreview(size) {
     for (var i = 0; i < previews.length; i++) {
@@ -26,42 +20,39 @@ window.gallery = (function () {
     }
   };
   
-  galleryDesc.addEventListener('click', function (evt) {
-    var currentBtn = evt.target;
-    if (isActive(evt)) {
-      return;
-    } else {
-      for (i = 0; i < sizeBtns.length; i++) {
-        sizeBtns[i].classList.remove('active');
+  for (var i = 0; i < sizeBtns.length; i++) {
+    sizeBtns[i].addEventListener('click', function (evt) {
+      var currentBtn = evt.currentTarget;
+      if (currentBtn.classList.contains('active')) {
+        return;
+      } else {
+        for (i = 0; i < sizeBtns.length; i++) {
+          sizeBtns[i].classList.remove('active');
+        }
+        for (var i = 0; i < previews.length; i++) {
+          previews[i].classList.add('hide');
+        }
       }
-      for (var i = 0; i < previews.length; i++) {
-        previews[i].classList.add('hide');
+      currentBtn.classList.add('active');
+      var currentPreview;
+      switch (currentBtn.dataset.size) {
+        case 'M':
+          currentPreview = choosePreview('preview-m');
+          currentPreview.classList.remove('hide');
+          break;
+        case 'L':
+          currentPreview = choosePreview('preview-l');
+          currentPreview.classList.remove('hide');
+          break;
+        case 'XL':
+          currentPreview = choosePreview('preview-xl');
+          currentPreview.classList.remove('hide');
+          break;
+        case 'XXL':
+          currentPreview = choosePreview('preview-xxl');
+          currentPreview.classList.remove('hide');
+          break;
       }
-    }
-    currentBtn.classList.add('active');
-    var currentPreview;
-    switch (currentBtn.dataset.size) {
-      case 'M':
-        currentPreview = choosePreview('preview-m');
-        currentPreview.classList.remove('hide');
-        currentPreview.classList.add('show');
-        break;
-      case 'L':
-        currentPreview = choosePreview('preview-l');
-        currentPreview.classList.remove('hide');
-        currentPreview.classList.add('show');
-        break;
-      case 'XL':
-        currentPreview = choosePreview('preview-xl');
-        currentPreview.classList.remove('hide');
-        currentPreview.classList.add('show');
-        break;
-      case 'XXL':
-        currentPreview = choosePreview('preview-xxl');
-        currentPreview.classList.remove('hide');
-        currentPreview.classList.add('show');
-        break;
-    }
-  });
-  
+    });
+  }
 })();

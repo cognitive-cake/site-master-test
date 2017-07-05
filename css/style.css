@@ -286,6 +286,7 @@ main .container {
 }
 
 .user-response__text-wrapper {
+  position: relative;
   min-height: 152px;
   padding: 23px;
   
@@ -294,4 +295,35 @@ main .container {
   
   border: 1px solid #d1d1d1;
   background-color: #fff;
+  
+  z-index: 10;
+}
+
+.user-response__arrow {
+  position: absolute;
+  top: 20px;
+  left: -11px;
+  
+  width: 0;
+  height: 0;
+  
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  
+  border-right: 11px solid #d1d1d1;  
+}
+
+.user-response__arrow::after {
+  position: relative;
+  top: -8px;
+  left: 2px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  
+  border-right: 11px solid white;  
 }

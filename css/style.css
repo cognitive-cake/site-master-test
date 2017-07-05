@@ -33,7 +33,12 @@ body {
 }
 
 main {
-background-color: #f4f3f4;  
+  padding-top: 58px;
+  background-color: #f4f3f4;  
+}
+
+main .container {
+  padding: 0;
 }
 
 
@@ -147,14 +152,6 @@ background-color: #f4f3f4;
   .first-slide p {
     margin-bottom: 3px;
   }
-}
-
-main {
-  padding-top: 58px;
-}
-
-main .container {
-  padding: 0;
 }
 
 .item-section {

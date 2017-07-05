@@ -299,6 +299,35 @@ main .container {
   z-index: 10;
 }
 
+.user-response__text::after,
+.user-response__text::before {
+  position: absolute;
+  
+  content: '';
+  display: block;
+  
+  border: 1px solid #d1d1d1;
+  background-color: #fff;
+}
+
+.user-response__text::before {
+  bottom: -4px;
+  left: 19px;
+  
+  width: 345px;
+  height: 20px;
+  z-index: 9;
+}
+
+.user-response__text::after {
+  bottom: -6px;
+  left: 27px;
+  
+  width: 323px;
+  height: 20px;
+  z-index: 8;
+}
+
 .user-response__arrow {
   position: absolute;
   top: 20px;

@@ -35,7 +35,7 @@ window.gallery = (function () {
       }
       currentBtn.classList.add('active');
       var currentPreview;
-      switch (currentBtn.dataset.size) {
+      switch (currentBtn.getAttribute('data-size')) {
         case 'M':
           currentPreview = choosePreview('preview-m');
           currentPreview.classList.remove('hide');

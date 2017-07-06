@@ -357,3 +357,16 @@ main .container {
   
   border-right: 11px solid white;  
 }
+
+.main-footer {
+  min-height: 87px;
+}
+
+.main-footer h4 {
+  margin-top: 40px;
+}
+
+.main-footer a {
+  color: #333333;
+  opacity: 0.6;
+}

@@ -64,6 +64,13 @@ main .container {
   letter-spacing: 0.09em;
 }
 
+.gallery-description__hr {
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+}
+
 .gallery-description .big-margins {
   margin-top: 24px;
   margin-bottom: 49px;

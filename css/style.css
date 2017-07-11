@@ -37,8 +37,16 @@ main {
   background-color: #f4f3f4;  
 }
 
-main .container {
-  padding: 0;
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  padding: 5px;
+}
+
+.navbar-brand > img {
+  width: 45px;
 }
 
 .carousel-caption {
@@ -185,6 +193,10 @@ main .container {
   margin-bottom: 50px;
 }
 
+.user-response__avatar {
+  margin-bottom: 10px;
+}
+
 .user-response__text-wrapper {
   position: relative;
   min-height: 152px;
@@ -274,12 +286,29 @@ main .container {
 
 
 @media (min-width: 768px) {
+  main .container {
+    padding: 0;
+  }
+  
   .navbar-wrapper {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 20;
+  }
+  
+  .navbar-default {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+  }
+  
+  .navbar-brand > img {
+    width: 100%;
   }
   
   .nav .link-white {
@@ -381,9 +410,6 @@ main .container {
     font-size: 14px;
   }
   
-  .user-response__avatar {
-    margin-bottom: 10px;
-  }
 }
 
 

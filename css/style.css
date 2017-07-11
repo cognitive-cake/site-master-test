@@ -209,7 +209,7 @@ main .container {
   bottom: -4px;
   left: 19px;
   
-  width: 345px;
+  width: 86.2%;
   height: 20px;
   z-index: 9;
 }
@@ -218,7 +218,7 @@ main .container {
   bottom: -6px;
   left: 27px;
   
-  width: 323px;
+  width: 80.7%;
   height: 20px;
   z-index: 8;
 }

@@ -128,6 +128,11 @@ main {
   margin-bottom: 60px;
 }
 
+.btn-slider {
+  border: 2px solid white;
+  border-radius: 0;
+}
+
 .btn-slider.link-white {
   color: #fff;
 }
@@ -472,7 +477,5 @@ main {
     padding-bottom: 18px;
     width: 200px;
     height: 60px;
-    border: 2px solid white;
-    border-radius: 0;
   }
 }
